@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+}
+
+@layer components {
+  .text-time {
+    @apply text-xs text-blue-500;
+  }
+  .text-main {
+    @apply text-sm font-bold;
+  }
+  .text-sub {
+    @apply text-sm;
+  }
+  .text-note {
+    @apply text-xs;
+  }
+}

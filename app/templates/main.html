@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
+  <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+</head>
+<body class="bg-slate-100">
+  <div class="container mx-auto my-7 shadow-lg flex flex-row items-stretch">
+    <!-- Sidebar -->
+    <div class="w-72 p-6 bg-slate-200 flex flex-col items-center">
+      <div class="w-32 h-32">
+        <img class="rounded-full" src="{{ url_for('static', filename='profile_picture.jpg') }}" />
+      </div>
+      <div class="mt-4">
+        <name class="text-2xl">Heehoon Kim</name>
+      </div>
+      <p><a href="https://scholar.google.com/citations?user=l1E-gxAAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+      <p><a href="https://github.com/csehydrogen" target="_blank">Github</a></p>
+      <p><a href="mailto:heehoon@aces.snu.ac.kr" target="_blank">Email</a></p>
+    </div>
+    <!-- Main panel -->
+    <div class="p-6 grow bg-white">
+
+      <h2 class="text-xl">Research Interests</h2>
+      <hr>
+      <ul class="mt-4 list-disc list-inside">
+        <li>High-performance computing applications such as deep learning.</li>
+        <li>Scalability on heterogeneous clusters with accelerators such as GPUs and FPGAs.</li>
+        <li>Utilizing storage devices (HDDs, NVMe SSDs, ...) to overcome memory capacity.</li>
+      </ul>
+
+      <h2 class="text-xl mt-4">Education</h2>
+      <hr>
+      <ul>
+        <li class="mt-4">
+          <p class="text-time">Mar. 2017 - Present</p>
+          <p class="text-main">Ph.D. in Computer Science and Engineering</p>
+          <p class="text-sub">Seoul National University</p>
+          <p class="text-note">Advisor: Prof. Jaejin Lee</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-time">Mar. 2013 - Feb. 2017</p>
+          <p class="text-main">B.S. in Computer Science and Engineering</p>
+          <p class="text-sub">Seoul National University</p>
+          <p class="text-note">Summa cum laude (Overall GPA: 4.07 / 4.30, Major GPA: 4.21 / 4.30)</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-time">Mar. 2010 - Feb. 2013</p>
+          <p class="text-main">Korea Science Academy</p>
+          <p class="text-note">Busan, Korea</p>
+        </li>
+      </ul>
+
+      <h2 class="text-xl mt-4">Publications</h2>
+      <hr>
+      <h3 class="text-lg mt-4">Conferences</h3>
+      <ul>
+        <li class="mt-4">
+          <p class="text-main">SnuQS: scaling quantum circuit simulation using storage devices.</p>
+          <p class="text-sub">Daeyoung Park, <b>Heehoon Kim</b>, Jinpyo Kim, Taehyun Kim, and Jaejin Lee.</p>
+          <p class="text-note">
+            ICS '22: Proceedings of the 36th ACM International Conference on Supercomputing,
+            No. 6, pp. 1—13, Online, June 2022.
+            DOI: <a href="https://doi.org/10.1145/3524059.3532375" target="_blank">10.1145/3524059.3532375</a>
+          </p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">SOFF: An OpenCL High-Level Synthesis Framework for FPGAs.</p>
+          <p class="text-sub">Gangwon Jo, <b>Heehoon Kim</b>, Jeesoo Lee, and Jaejin Lee.</p>
+          <p class="text-note">
+            ISCA '20: Proceedings of the 47th Annual International Symposium on Computer Architecture,
+            pp. 295—308, Online, June 2020. 
+            DOI: <a href="https://doi.org/10.1109/ISCA45697.2020.00034" target="_blank">10.1109/ISCA45697.2020.00034</a>
+          </p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">Performance Analysis of CNN Frameworks for GPUs.</p>
+          <p class="text-sub"><b>Heehoon Kim</b>, Hyoungwook Nam, Wookeun Jung, and Jaejin Lee.</p>
+          <p class="text-note">
+            ISPASS '17: Proceedings of 2017 IEEE International Symposium on Performance Analysis of Systems and Software, 
+            pp. 55—64, Santa Rosa, California, USA, April 2017. 
+            DOI: <a href="http://dx.doi.org/10.1109/ISPASS.2017.7975270" target="_blank">10.1109/ISPASS.2017.7975270</a>
+          </p>
+        </li>
+      </ul>
+      <h3 class="text-lg mt-4">Papers in Korean</h3>
+      <ul>
+        <li class="mt-4">
+          <p class="text-main">PCIe 기반 FPGA 보드를 위한 DMA 컨트롤러 구현 및 분석.</p>
+          <p class="text-sub"><b>김희훈</b>, 이재진.</p>
+          <p class="text-note">
+            정보과학회논문지, 48(2), 141-146, 2021년 2월.
+            RISS: <a href="http://www.riss.kr/link?id=A107267570" target="_blank">107273596</a>
+          </p>
+          <p class="text-note">
+            <b>Best paper award.</b>
+            한국정보과학회 2020년 한국컴퓨터종합학술대회 논문집, 1192-1194, 2020년 7월. 
+            RISS: <a href="http://www.riss.kr/link?id=A107047457" target="_blank">107047457</a>
+          </p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">FPGA Off-Chip 메모리의 성능 분석.</p>
+          <p class="text-sub"><b>김희훈</b>, 이재진.</p>
+          <p class="text-note">
+            한국정보과학회 2019년 한국컴퓨터종합학술대회 논문집, 39-41, 2019년 6월.
+            RISS: <a href="http://www.riss.kr/link?id=A106329771" target="_blank">106329771</a>
+          </p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">Multi-GPU에서 딥 뉴럴 네트워크 학습의 성능 확장성 탐구.</p>
+          <p class="text-sub"><b>김희훈</b>, 정우근, 이재진.</p>
+          <p class="text-note">
+            한국정보과학회 2017년 한국컴퓨터종합학술대회 논문집, 1474-1476, 2017년 6월.
+            RISS: <a href="http://www.riss.kr/link?id=A103298318" target="_blank">103298318</a>
+          </p>
+        </li>
+      </ul>
+
+      <h2 class="text-xl mt-4">Professional Activities</h2>
+      <hr>
+      <ul>
+        <li class="mt-4">
+          <p class="text-main">Artifact Evaluation Committee</p>
+          <p class="text-sub">PPoPP 2020</p>
+        </li>
+      </ul>
+
+      <h2 class="text-xl mt-4">Experiences</h2>
+      <hr>
+      <ul>
+        <li class="mt-4">
+          <p class="text-main">Teaching Assistant @ Seoul National University</p>
+          <p class="text-sub">Bootcamp for Graduate School of Data Science (Winter 2021)</p>
+          <p class="text-sub">Scalable High-Performance Computing (Fall 2020, M3239.003800)</p>
+          <p class="text-sub">Multicore Computing (Spring 2020, 4190.414A)</p>
+          <p class="text-sub">Logic Design (Spring 2018, M1522.000700)</p>
+          <p class="text-sub">Multicore Computing (Fall 2017, 4190.414A)</p>
+          <p class="text-sub">Programming Practice (Fall 2016, 4190.103A)</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">Teaching Assistant</p>
+          <p class="text-sub">2018 Accelerator Programming Summer School</p>
+          <p class="text-sub">2018 Accelerator Programming Winter School</p>
+          <p class="text-sub">2017 Accelerator Programming Summer School</p>
+          <p class="text-sub">2017 Accelerator Programming Winter School</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-time">Mar. 2013 - Feb. 2017</p>
+          <p class="text-main">SNUPS (Problem Solving Club of SNU)</p>
+          <p class="text-sub">Club president at 2014</p>
+        </li>
+      </ul>
+
+      <h2 class="text-xl mt-4">Honors & Awards</h2>
+      <hr>
+      <ul>
+        <li class="mt-4">
+          <p class="text-main">Supercomputing</p>
+          <p class="text-sub">Grand prize, 2017 Korea Supercomputing Challenge</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">Competitive Programming</p>
+          <p class="text-sub">6th Place, 2016 ACM-ICPC Asia Daejeon Regional Contest</p>
+          <p class="text-sub">3th Place, 2016 Samsung Collegiate Programming Cup</p>
+          <p class="text-sub">6th Place, 2015 ACM-ICPC Asia Daejeon Regional Contest</p>
+          <p class="text-sub">3th Place, 2015 Samsung Collegiate Programming Cup</p>
+          <p class="text-sub">4th Place, 2014 ACM-ICPC Asia Daejeon Regional Contest</p>
+          <p class="text-sub">7th Place, 2013 ACM-ICPC Asia Danang Regional Contest</p>
+          <p class="text-sub">10th Place, 2013 ACM-ICPC Asia Daejeon Regional Contest</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-main">Cryptography</p>
+          <p class="text-sub">3rd Prize, 2013 Korea Cryptography Competition (국가암호공모전)</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-time">Mar. 2017 - Feb. 2022</p>
+          <p class="text-main">Graduate Student Scholarship</p>
+          <p class="text-sub">Korea Foundation for Advanced Studies</p>
+        </li>
+        <li class="mt-4">
+          <p class="text-time">Mar. 2013 - Feb. 2017</p>
+          <p class="text-main">Presidential Science Scholarship (대통령과학장학금)</p>
+          <p class="text-sub">Korea Student Aid Foundation</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</body>
+</html>
